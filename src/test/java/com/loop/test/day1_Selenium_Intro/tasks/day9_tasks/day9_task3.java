@@ -21,16 +21,16 @@ public class day9_task3 {
     @Test
     public void usingMoveTo() throws InterruptedException {
 
-        Driver.getDriver().get(ConfigurationReader.getProperty("loop.practice"));
-        WebElement poweredByLoop = Driver.getDriver().findElement(By.xpath("//a[contains(text(),'LOOPCAMP')]"));
+        Driver.getDriver().get(ConfigurationReader.getProperty("etsy.url"));
+        WebElement emailBox = Driver.getDriver().findElement(By.xpath("//input[@id='email-list-signup-email-input']"));
         Actions actions1 = new Actions(Driver.getDriver());
         Thread.sleep(3000);
-        actions1.moveToElement(poweredByLoop).perform();
-
-        //WebElement loop = Driver.getDriver().findElement(By.xpath("//li[@class='nav-item']"));
-        Actions action = new Actions(Driver.getDriver());
-        Thread.sleep(3000);
-        action.sendKeys(Keys.PAGE_UP).perform();
+        actions1.sendKeys(Keys.PAGE_UP);
+    }
+//        //WebElement loop = Driver.getDriver().findElement(By.xpath("//li[@class='nav-item']"));
+//        Actions action = new Actions(Driver.getDriver());
+//        Thread.sleep(3000);
+//        action.sendKeys(Keys.PAGE_UP).perform();
 
 
 
@@ -71,4 +71,4 @@ public class day9_task3 {
 //        (do not spend more than 20 mins, if you can not, can not)
 
     }
-}
+
