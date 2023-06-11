@@ -32,43 +32,5 @@ public class day9_task3 {
         Thread.sleep(3000);
         action.sendKeys(Keys.PAGE_UP).perform();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//        1. Continue from where the Task 4 is left in the same test.
-//        2. Scroll back up to Loop Academy link/picture using PageUP button
-//
-//        extra task - no need jira user story
-//============
-//        1. login docuport as a advisor
-//        2. go to my loads
-//        3. try to upload a file
-//        (do not spend more than 20 mins, if you can not, can not)
-
     }
 }
